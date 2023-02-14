@@ -21,7 +21,12 @@ const app = createApp({
             ]
         };
     },
-    methods: {},
+    methods: {
+        removeTodo(index) {
+            this.todoList.splice(index, 1);
+
+        }
+    },
 });
 
 app.mount("#app");
