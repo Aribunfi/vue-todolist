@@ -16,51 +16,24 @@
 </head>
 
 <body>
-    <h1>TO DO LIST</h1>
-    <div class="container">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Aggiungi un impegno" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Aggiungi to do</button>
-        </div>
-
-        <div class="row row-cols-3">
-            <div class="col">
-                <ol class="list-group list-group-numbered">
-                    <li v-for="task in tasks" class="list-group-item">A list item</li>
-                    {{ tasks }}
-                    <span class="badge rounded-pill ms-auto">
-                        <i class="fa fa-times"></i>
-                    </span>
-
-                    <li class="list-group-item">A list item</li>
-                    <li class="list-group-item">A list item</li>
-                </ol>
+    <div id="app">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <img src="./img/logo.png" alt="Logo Boolean" height="50">
             </div>
-            <div class="col">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">A list item</li>
-                    <li class="list-group-item">A list item</li>
-                    <li class="list-group-item">A list item</li>
-                </ol>
-            </div>
-            <div class="col">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">A list item</li>
-                    <li class="list-group-item">A list item</li>
-                    <li class="list-group-item">A list item</li>
-                </ol>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
+        </nav>
     </div>
+
+
+    <h1>TO DO LIST</h1>
+
+
+
+
+
+
+
 
 
     <script src="main.js"></script>
