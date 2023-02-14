@@ -29,7 +29,9 @@
         <div class="container">
             <h1>TO DO LIST</h1>
             <ul class="list-group">
-                <li v-for="todo in todoList" class="list-group-item"> {{ todo.text }} </li>
+                <li v-for="todo in todoList" class="list-group-item" :class="(todo.done) ? 'deleted-text' : '' ">
+                    {{ todo.text }}
+                </li>
             </ul>
         </div>
 
